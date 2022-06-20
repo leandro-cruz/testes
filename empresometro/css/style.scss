@@ -1,0 +1,131 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,400&display=swap');
+
+$header-height: 60px;
+$footer-height: 50px;
+
+$orange: #ff7100;
+$blue: #0066fc;
+$greeny: #29c885;
+$white-gradient: rgba(255, 255, 255, 0.2);
+$white: #ffffff;
+$light-gray: #d1d1d1;
+$gray: #bbbbbb;
+$medium-gray: #808080;
+$deep-gray: #555555;
+
+$font-base: 400 14px 'Roboto', sans-serif;
+$text-card: 900 2rem;
+$text-paragrafo: 900 1rem;
+
+.tit-pri {
+    font: 900 2rem;
+}
+
+.tit-sec {
+    font: 900 2rem;
+}
+
+.tit-ter {
+    font: 900 2rem;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    @include reset;
+}
+
+main {
+    font: $font-base;
+    color: $medium-gray;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    padding: 0 2rem;
+    position: relative;
+
+    nav {
+        display: inline-flex;
+        z-index: 1;
+
+        a {
+            margin: 0 1em;
+            padding: 0.5rem;
+            text-decoration: none;
+            color: $light-gray;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .nav-blob {
+        position: absolute;
+        right: 0;
+        bottom: -65px;
+        width: 800px;
+    }
+}
+
+section {
+    min-height: calc(100vh - #{$header-height} - #{$footer-height});
+}
+
+.cadastro {
+    @include size(600px, 600px);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2em;
+
+
+    h1 {
+        color: $deep-gray;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        color: $light-gray;
+    }
+}
+
+.box-formulario {
+    padding: 1em;
+    background-color: $white-gradient;
+    border: 1px solid $light-gray;
+    text-align: center;
+}
+
+footer {
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $footer-height;
+    padding: 0 2rem;
+
+    color: $white;
+
+    nav {
+        display: flex;
+    }
+}

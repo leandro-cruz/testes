@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,400&display=swap");
+.tit-pri {
+  font: 900 2rem;
+}
+
+.tit-sec {
+  font: 900 2rem;
+}
+
+.tit-ter {
+  font: 900 2rem;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main {
+  font: 400 14px "Roboto", sans-serif;
+  color: #808080;
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 0 2rem;
+  position: relative;
+}
+
+header nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  z-index: 1;
+}
+
+header nav a {
+  margin: 0 1em;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+header nav a:hover {
+  color: #ffffff;
+}
+
+header .nav-blob {
+  position: absolute;
+  right: 0;
+  bottom: -65px;
+  width: 800px;
+}
+
+section {
+  min-height: calc(100vh - 60px - 50px);
+}
+
+.cadastro {
+  width: 600px;
+  height: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.cadastro h1 {
+  color: #555555;
+  text-align: center;
+}
+
+.cadastro h3 {
+  text-align: center;
+  color: #d1d1d1;
+}
+
+.box-formulario {
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #d1d1d1;
+  text-align: center;
+}
+
+footer {
+  background-color: #0066fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  padding: 0 2rem;
+  color: #ffffff;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
